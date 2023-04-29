@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			background-image: linear-gradient(#B0A4A4,#957777,#643A6B,#5F264A);
+
+		}
+		
+			/* Navbar styling */
+		body {
+			background-color: #f2f2f2;
+		}
+		
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			background-image: linear-gradient(#B0A4A4,#957777,#643A6B,#5F264A);
+		}
+		
+		
+		ul a.active{
+					background-color: #393053;
+					color:black;
+					}
+		.home{
+			text-shadow: 2px 3px black;
+			color: white;
+			}
+		
+		.Pone{
+			font-size:30px;
+			text-shadow: 2px 3px black;
+			color: white;
+			}
+			
+		ul {
+			background-image: linear-gradient(#2D033B,#810CA8,#C147E9,#E5B8F4);
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #27E1C1;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			
+		}
+
+		li a:hover {
+			background-color: #27E1C1;
+		}
+		
+		/* Slider styling */
+		.slider {
+			width: 100%;
+			height: 597px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.slide {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		.slide img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}	
+		
+		/* frame video */
+		.frame{
+				padding-left:19%;
+				}
+				
+		iframe{
+				width:75%;
+				height:500px;
+				}
+	
+	</style>
+</head>
+<body>
+<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Plot.html" class="active">Plot</a></li>
+		<li><a href="shattermecharacters.html">Characters</a></li>
+		<li><a href="ABOUT ME.HTML">About Me</a></li>
+	</ul>
+	
+	<!-- Slider -->
+	<div class="slider">
+		<div class="slide">
+			<img src="395afaa8210726ca446c1b1cdf1276aa.jpg">
+		</div>
+		<div class="slide">
+			<img src="4cfcfd0e8a4fd93d1da4f05d60c329a2.jpg">
+		</div>
+		<div class="slide">
+			<img src="616f24c5ff203a4e5daeb2d4492c49a7.jpg">
+		</div>
+	</div>
+	<br>
+	<div class="Pone">
+	<h1 style="text-align: justify; margin-right:20px;"><strong>Plot</strong></h1>
+			<p>A <strong>girl</strong>, Juliette Ferrars is a 17-year-old girl whose touch paralyzes and kills, taking living organisms' energy. 
+			Juliette is in an asylum because three years prior, she killed a small boy in a store with her unusual touch. It is evident that Juliette is partly insane,
+			both from prolonged isolation and at horror at herself. She repeatedly dreams of a bird and writes in a small notebook.</p>
+			<p>
+				Suddenly, for the first time ever, Juliette gets a cellmate who goes by the name of Adam Kent. 
+			He reminds Juliette of someone, but she convinces herself that it is not possible that she ever knew him. 
+			She shows Adam the ways of the asylum, 
+			such as not to eat the scalding food immediately, and when the asylum's occupants are allowed to shower.</p>
+			
+			<p>
+			One day, the Reestablishment, a government that has the world within its grasp, comes for Juliette. 
+			It is revealed that Adam is a soldier for Aaron Warner, the leader of Sector 45 of the Reestablishment. 
+			Warner, who is also the son of the Reestablishment's Supreme Commander, 
+			makes Juliette an offer that includes her being able to get out of the asylum in turn for her torturing any prisoners with her touch as a weapon for the Reestablishment.</p>
+	</div>
+	<div class="frame">
+	<iframe src="https://www.youtube.com/embed/ZLvhAOxeDoM">
+	</iframe>
+	</div>
+	<br>
+	
+	<script>
+		// Slider functionality
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 5000); // Change image every 5 seconds
+		}
+		
+		// Responsive navbar functionality
+	
+	</script>
+</body>
+</html>
